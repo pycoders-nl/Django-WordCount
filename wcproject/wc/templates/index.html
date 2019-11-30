@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<h1 style="background-color:DodgerBlue; color:rgb(196, 229, 2);">
+    <div class="mx-auto" style="width: 800px;">
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+    <p class="text-center">Click under the button then write something. &#128540;</div></p></h1>
+    </div>
+    
+    <p class="text-center"><b>&#128073; Our goal is only practic about Django.</b></p>
+  
+<nav class="navbar navbar-light bg-light">
+  <div class="mx-auto" style="width: 200px;">
+  
+  <form class="form-inline">
+    <td>
+        <a href="/textAdd " class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Click for add TEXT</a> {% csrf_token %}
+    </td>
+  </form>
+  </div>
+</nav>
+
+{% endblock %}

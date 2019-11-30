@@ -1,0 +1,50 @@
+
+{% extends 'base.html' %}
+
+{% load static%}
+{% block content %}
+<nav class="navbar navbar-dark bg-dark mb-4 printHidden " >
+    <a style="color:rgb(196, 229, 2);" class="navbar-brand"> >>> WORD COUNT <<< </a>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/"> TEXT PAGE</a>
+
+</nav>
+
+<nav class="bg-light m-4 ">        
+    <label for="TOPLAM KELIME"><h5>&nbsp; &nbsp;TOTAL WORD COUNT</h5></label> <br>
+</nav>
+<nav class="m-4  ">        
+    <label for="TOTAL WORD" >
+        <h6>&nbsp;&nbsp; &nbsp;{{word_count}}</h6>
+
+    </label> <br>
+</nav>
+<nav class="bg-warning m-4">        
+    <label for="ozgun KELIME"><h5> &nbsp; &nbsp; TOTAL UNIQUE WORD COUNT</h5></label> <br>
+</nav>
+<nav class="m-4">        
+        <label for="TOTAL WORD">
+               <h6> &nbsp;&nbsp; &nbsp;{{ozgun_sayi}}</h6>            
+
+        </label> <br>
+</nav>
+<nav class="bg-success m-4">        
+        <label for="TOTAL WORD"><h5>&nbsp; &nbsp;MOST REPEAT WORD</h5></label> <br>
+</nav>
+<nav class="m-4">        
+        <label for="TOTAL WORD">
+            <h6>&nbsp;&nbsp; &nbsp;{{repeat_word}}  </h6>
+
+        </label> <br>
+</nav>
+<nav class="bg-danger m-4">        
+        <label for="TOTAL WORD"><h5>&nbsp; &nbsp;MOST REPEAT WORD COUNT</h5></label> <br>
+</nav>
+<nav class="m-4">        
+        <label for="TOTAL WORD">
+            <h6>&nbsp;&nbsp; &nbsp;{{repeat_wcount}}  </h6> 
+
+        </label> 
+</nav>
+
+
+{% endblock %}
