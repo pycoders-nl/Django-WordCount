@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Kelime Sayisi Hesaplama Programi</h1>
+
+<h2>Yazdiginiz Metin:</h2>
+{{ fulltext }}
+
+<h3>Yazdiklariniz {{word_len}} adet kelimeden olusmaktadir.</h3>
+<h3>Ayrica yazdiklariniz icinde {{word_len_uniq}} adet ozgun kelime bulunmaktadir.</h3>
+
+
+<table style="width:100%" border="3px solid">
+  <tr>
+    <th>Kelimeler</th>
+    <th>Sayilari</th>
+  </tr>
+{% for k, v in word_dict.items %}
+  <tr>
+    <td><b>{{k}}</td></b>
+    <td><b>{{v}}</td></b>
+  </tr>
+{% endfor %}
+</table>
+
+<br/>
+
+<form action="{% url 'index' %}">
+  <input type="submit" value="Yeniden Dene!" />
+</form>
+<h5>Bizi izlemeye devam edin :)</h5>
+<style>
+    h1 {
+      background-color: darkblue;
+      color: darkorange;
+      
+    }
+    h2,h3 {
+      background-color: aqua;
+      color: brown;
+    }
+    table {
+      background-color: lightpink;
+      color: blueviolet;
+    }
+    td {
+      color: brown;
+      text-align: center;
+      
+    }
+    body {
+      border:6px ridge;
+      width:50%;
+      margin: 50px 0px 0px 300px;
+      padding: 15px;
+    }
+    </style>  
+</body>
+</html>

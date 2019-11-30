@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Kelime Hesaplama Programi</h1>
+<p>
+  <h2>Asagidaki kutucuga istediginiz kadar kelimeden olusan bir metin girebilirsiniz.
+    Bu programla girdiginiz metindeki kelime sayilari ile ozgun olan veya tekrar eden
+    kelime sayilarini size ozel bir sonuc sayfasinda sunuyoruz.
+    Sonuca gitmek icin tek yapmaniz gereken kutucuga metni girdikten sonra Hesapla
+    butonuna tiklamanizdir.
+    İyi Eglenceler!!!</h2>
+</p>
+<style>
+h1 {
+  background-color: darkblue;
+  color: darkorange;
+  
+}
+h2 {
+  background-color: aqua;
+  color: brown;
+}
+textarea {
+  background-color: lightpink;
+  color: blueviolet;
+}
+body {
+  border:6px ridge;
+  width:50%;
+  margin: 50px 0px 0px 300px;
+  padding: 15px;
+}
+</style>
+
+<form action="{% url 'hesapla' %}">
+  <textarea cols="94" rows="8" name="fulltext"></textarea>
+  <br/>
+  <input type="submit" value="Hesapla!" />
+</form>
+
+<a href="{% url 'hakkinda' %}">
+  Bu program hakkinda daha fazla bilgi almak isterseniz buraya tiklayiniz...
+</a>
+</body>
+</html>
