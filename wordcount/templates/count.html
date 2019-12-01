@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Count</title>
+</head>
+<body>
+    <h1 style="color: darkred; padding: 10px; font: 50; background-color: rgb(183, 242, 243); margin: 0;">Your text:</h1>
+    <div style="background-color: rgb(183, 242, 243); padding: 10px; ">
+        <p style="color: darkred;">{{ text }}</p>
+    </div>
+    <br>
+    <h1 style="color: darkred; padding: 10px; font: 50; background-color: rgb(149, 226, 166); margin: 0;">Number of Words:</h1>
+    <div style="background-color: rgb(149, 226, 166); padding: 10px; ">
+        <p id="number" style="color: darkred; ">{{ totalwords }}</p>
+    </div><br>
+    <h1 style="color: darkred; padding: 10px; font: 50; background-color: rgb(245, 208, 191); margin: 0;">Number of Each Word:</h1>
+    <div style="background-color: rgb(245, 208, 191); padding: 10px; ">
+        {% for word,number in eachword %}
+        <p style="color: darkred;">{{ word }}:{{ number }}</p>
+        {% endfor %}      
+    </div>
+    <a href="/"><p style="background-color: rgb(241, 171, 206); text-align: center; padding: 10px; font: 30;"> GO BACK</p> </a>
+</body>
+</html>

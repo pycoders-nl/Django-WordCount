@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: aqua; padding: 30px; margin: 0px; color: darkorchid;" >Welcome</h1><br>
+    <form action="/count/" method="POST">
+    {% csrf_token %}
+    <div style="text-align: center; border: black; background-color: rgb(241, 232, 221); padding: 5px;">
+        <textarea type='text' name="mytext" cols="120" rows="10">Type or paste your text here</textarea>
+    </div>
+    <div style="padding: 5px; background-color: rgb(241, 232, 221); text-align: center;">
+        <input type="submit" value="Count Words" width="500px" height="250px">
+    </div>   
+    </form>
+
+</body>
+</html>
