@@ -1,4 +1,4 @@
-# Django-WordCount
+# Django_WordCount_Projects
 
 Django ile kullanıcıların girdiği bir metnin analizini yapan bir web uygulaması yapmanızı istiyoruz.
 
