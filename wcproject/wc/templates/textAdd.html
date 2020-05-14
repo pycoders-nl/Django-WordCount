@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<h2 style="color:rgb(229, 47, 2);"><p class="text-center"> >>> Write down<span class="badge badge-secondary">New</span> <<< </p></h2>
+<div class="alert alert-success" role="alert">
+    What you want to write please <b>feel free... </b>
+</div>
+
+
+<form action="{% url 'page_show' %}" method="POST">
+  {% csrf_token %}
+  <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">With textarea</span>
+      </div>
+      <textarea name="message" rows="10" cols="80" placeholder="Write something..." aria-label="Text Area"></textarea>
+    </div>
+  
+  <br>
+  <input type="submit"> 
+  
+</form>
+
+{% endblock %}
