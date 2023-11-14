@@ -10,3 +10,5 @@ Django ile kullanıcıların girdiği bir metnin analizini yapan bir web uygulam
 
 Bu repo'yu kendi githubınıza fork edip, bilgisayarınıza klonladıktan sonra aynı klasör içine django projenizi başlatın ve sonrasında projenizi commitleyip pull request yapın.
  İyi çalışmalar!
+
+merhaba
