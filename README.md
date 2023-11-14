@@ -12,3 +12,5 @@ Bu repo'yu kendi githubınıza fork edip, bilgisayarınıza klonladıktan sonra 
  İyi çalışmalar!
 
 merhaba
+
+merhaba 2
